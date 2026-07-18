@@ -1,4 +1,4 @@
-# Study & Implementation Master Plan: LLM from Scratch
+# LLM from Scratch : Study & Implementation Plan
 
 This document serves as our structured notepad and roadmap for unpacking, implementing, and mastering the architectural and mathematical concepts found in the [`rasbt/LLMs-from-scratch`](https://github.com/rasbt/LLMs-from-scratch) repository from the excellent ["LLMs from Scratch"](https://www.manning.com/books/build-a-large-language-model-from-scratch) book by [Sebastian Raschka](https://sebastianraschka.com/).
 
@@ -48,8 +48,7 @@ Our aim is to not only reproduce the code but to fully understand the underlying
     *   **Causal Masking:** Constructing a lower-triangular matrix of negative infinities ($-\infty$) to maintain the autoregressive property (preventing the model from looking ahead).
 *   **Implementation Mechanics:**
     *   Writing the exact raw tensor matrix multiplication pipeline:
-        $$	ext{Attention}(Q, K, V) = 	ext{softmax}\left(rac{QK^T}{\sqrt{d_k}} + M
-ight)V$$
+        $$\text{Attention}(Q, K, V) = \text{softmax}\left(\frac{QK^T}{\sqrt{d_k}} + M\right)V$$
 *   **Elaboration Focus:**
     *   Scaling up from **Single-Head Attention** to **Multi-Head Attention (MHA)**.
     *   Efficient tensor transposition configurations using `.view()` and `.transpose()` to split the hidden dimension ($d_{in}$) into $h$ heads of size $d_k$ without cloning memory loops.
