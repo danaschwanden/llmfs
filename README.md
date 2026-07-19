@@ -63,6 +63,9 @@ The aim is to not only reproduce the code but to  understand the underlying mech
 ### 🟨 Step 3 — Chapter 4: Assembling the GPT Architecture
 *Putting the individual puzzle pieces together into a unified network.*
 
+*   **Code Notebook:**
+    *   The concepts are implemented and elaborated on in [this notebook](./03-chapter04.ipynb).
+
 *   **Core Architectural Concepts:**
     *   **Layer Normalization (LayerNorm):** Stabilizing activations across the feature dimension.
     *   **Pre-LN vs. Post-LN:** Why modern architectures prefer Pre-LN (LayerNorm before the attention block) for smoother gradient flow in deep networks.
@@ -73,9 +76,6 @@ The aim is to not only reproduce the code but to  understand the underlying mech
     *   Orchestrating the top-level `GPTModel` class integrating inputs, stacked transformer layers, and the final output Linear projection head.
 *   **Elaboration Focus:**
     *   Rigorous **Tensor Shape Tracking Matrix** mapping inputs from `[Batch Size, Seq Length]` through every layer boundary to the output logits of shape `[Batch Size, Seq Length, Vocab Size]`.
-*   **"What Happens If?" Challenges to Run:**
-    *   *What happens if we disable residual connections during initialization? How does it impact forward pass outputs?*
-    *   *How many parameters are in our model? Let's write a tracker function to count embedding vs. attention vs. linear head parameters.*
 
 ---
 
