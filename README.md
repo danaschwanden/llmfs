@@ -1,8 +1,8 @@
 # LLM from Scratch : Study & Implementation Plan
 
-This document serves as our structured notepad and roadmap for unpacking, implementing, and mastering the architectural and mathematical concepts found in the [`rasbt/LLMs-from-scratch`](https://github.com/rasbt/LLMs-from-scratch) repository from the excellent ["LLMs from Scratch"](https://www.manning.com/books/build-a-large-language-model-from-scratch) book by [Sebastian Raschka](https://sebastianraschka.com/).
+This document serves as a structured notepad and roadmap for unpacking, implementing, and mastering the architectural and mathematical concepts of the [GPT-2](https://openai.com/index/better-language-models/) large [transformer](https://arxiv.org/abs/1706.03762)⁠ based language model (LLM) discussed in the [`rasbt/LLMs-from-scratch`](https://github.com/rasbt/LLMs-from-scratch) repository from the excellent ["LLMs from Scratch"](https://www.manning.com/books/build-a-large-language-model-from-scratch) book by [Sebastian Raschka](https://sebastianraschka.com/).
 
-Our aim is to not only reproduce the code but to fully understand the underlying mechanics and be able to modify and extend it.
+The aim is to not only reproduce the code but to  understand the underlying mechanics and be able to modify and extend it.
 
 ---
 
@@ -33,9 +33,8 @@ Our aim is to not only reproduce the code but to fully understand the underlying
     *   Deep dive into the **Token Embedding Matrix** ($W_e$) acting as a differentiable lookup table.
     *   Implementing and justifying **Learned Positional Embeddings** ($W_p$) to inject sequence order into the transformer block, resulting in the initial vector representation: 
         $$X_0 = X_{token} + X_{position}$$
-*   **"What Happens If?" Challenges to Run:**
-    *   *What happens if we increase vocabulary size significantly? How does it affect parameter count and memory consumption?*
-    *   *What happens if we train a model without positional embeddings? Does it understand word order?*
+*   **"Code Notebook":**
+    *   The concepts are implemented and elaborated on in [this notebook](./01-chapter02.ipynb).
 
 ---
 
