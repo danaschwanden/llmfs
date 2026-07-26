@@ -82,6 +82,9 @@ The aim is to not only reproduce the code but to  understand the underlying mech
 ### 🟥 Step 4 — Chapter 5: Pretraining & Generative Inference
 *Teaching the model to write by exposing it to unlabeled data.*
 
+*   **Code Notebook:**
+    *   The concepts are implemented and elaborated on in [this notebook](./04-chapter05.ipynb).
+
 *   **Core Architectural Concepts:**
     *   **Cross-Entropy Loss Function:** Evaluating model sequence probabilities against true tokens.
     *   **Autoregressive Generation:** Generating text token-by-token iteratively.
@@ -92,14 +95,14 @@ The aim is to not only reproduce the code but to  understand the underlying mech
 *   **Elaboration Focus:**
     *   Modern repository additions: Integrating performance accelerators such as Automatic Mixed Precision (`torch.amp`), weight initialization protocols, and the cutting-edge **Muon** optimizer.
     *   **Key-Value (KV) Caching Mechanics:** Reusing previously calculated $K$ and $V$ tensors to accelerate inference from $O(N^2)$ down to $O(1)$ per token generation step.
-*   **"What Happens If?" Challenges to Run:**
-    *   *What happens to text output when temperature approaches 0 vs. when it goes above 2.0?*
-    *   *Let's benchmark text generation latency with KV Cache enabled vs. disabled.*
 
 ---
 
 ### 🟪 Step 5 — Chapters 6 & 7: Specialized Finetuning
 *Steering a pretrained base model into a highly focused task or a conversation helper.*
+
+*   **Code Notebook:**
+    *   The concepts are implemented and elaborated on in [the notebook for classification](./04-chapter06.ipynb) and [the notebook for instruction](./04-chapter07.ipynb).
 
 *   **Core Architectural Concepts:**
     *   **Classification Finetuning (Chapter 6):** Replacing the language model language head with a specific target classifier head (e.g., spam detection).
