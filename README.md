@@ -98,11 +98,11 @@ The aim is to not only reproduce the code but to  understand the underlying mech
 
 ---
 
-### 🟪 Step 5 — Chapters 6 & 7: Specialized Finetuning
+### 🟪 Step 5 and 6 — Chapters 6 & 7: Specialized Finetuning
 *Steering a pretrained base model into a highly focused task or a conversation helper.*
 
 *   **Code Notebook:**
-    *   The concepts are implemented and elaborated on in [the notebook for classification](./04-chapter06.ipynb) and [the notebook for instruction](./04-chapter07.ipynb).
+    *   The concepts are implemented and elaborated on in [the notebook for classification](./05-chapter06.ipynb) and [the notebook for instruction](./06-chapter07.ipynb).
 
 *   **Core Architectural Concepts:**
     *   **Classification Finetuning (Chapter 6):** Replacing the language model language head with a specific target classifier head (e.g., spam detection).
@@ -113,8 +113,5 @@ The aim is to not only reproduce the code but to  understand the underlying mech
     *   Creating automated evaluation strategies (e.g., via `Ollama` or model-evaluated scoring).
 *   **Elaboration Focus:**
     *   Implementing **Parameter-Efficient Finetuning (PEFT)** via **LoRA (Low-Rank Adaptation)** from scratch to drastically optimize trainable weights via low-rank decomposition ($W_0 + \Delta W$, where $\Delta W = B 	imes A$).
-*   **"What Happens If?" Challenges to Run:**
-    *   *What happens if we finetune all layers vs. only freezing the base model and finetuning the classification head?*
-    *   *How many parameters do we save from updating when training with a LoRA rank of r=8 vs. full finetuning?*
 
 ---

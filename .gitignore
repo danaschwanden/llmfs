@@ -2,8 +2,13 @@ the-verdict.txt
 .venv/**
 __pycache__/**
 gpt2/**
+sms_spam_collection/**
+sms_spam_collection.zip
 gpt2-small-124M.pth
 loss-plot.pdf
 model.pth
 model_and_optimizer.pth
 temperature-plot.pdf
+test.csv
+train.csv
+validation.csv
