@@ -8,6 +8,8 @@ instruction-data.json
 loss-plot.pdf
 model.pth
 model_and_optimizer.pth
+model-gpt2.safetensors
+review_classifier.pth
 sms_spam_collection.zip
 temperature-plot.pdf
 test.csv
