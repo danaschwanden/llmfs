@@ -2,7 +2,9 @@
 __pycache__/**
 gpt2/**
 sms_spam_collection/**
+__MACOSX/**
 
+accuracy-plot.pdf
 gpt2-small-124M.pth
 gpt2-small124M-sft.pth
 instruction-data.json
@@ -10,8 +12,10 @@ instruction-data-with-response.json
 loss-plot.pdf
 model.pth
 model_and_optimizer.pth
-model-gpt2.safetensors
+model-*.safetensors
 review_classifier.pth
+sentiment labelled sentences/
+sentiment+labelled+sentences.zip
 sms_spam_collection.zip
 temperature-plot.pdf
 test.csv
