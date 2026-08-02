@@ -1,7 +1,5 @@
 # LLM from Scratch : Study Plan
 
-This document serves as a structured notepad and roadmap for unpacking, implementing, and mastering the architectural and mathematical concepts of the [GPT-2](https://openai.com/index/better-language-models/) large [transformer](https://arxiv.org/abs/1706.03762)⁠ based language model (LLM) discussed in the [`rasbt/LLMs-from-scratch`](https://github.com/rasbt/LLMs-from-scratch) repository from the excellent ["LLMs from Scratch"](https://www.manning.com/books/build-a-large-language-model-from-scratch) book by [Sebastian Raschka](https://sebastianraschka.com/).
-
 The aim is to not only reproduce the code but to  understand the underlying mechanics and be able to modify and extend it.
 
 ---
