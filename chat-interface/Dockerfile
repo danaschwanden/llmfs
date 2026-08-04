@@ -25,4 +25,4 @@ ENV CHAINLIT_PORT=8000
 EXPOSE 8000
 
 # Default command
-CMD ["chainlit", "run", "app.py", "--host", "0.0.0.0", "--port", "8000"]
+CMD ["chainlit", "run", "app.py", "--host", "0.0.0.0", "--port", "8000", "--headless"]
