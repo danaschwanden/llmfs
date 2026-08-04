@@ -32,3 +32,4 @@ Test accuracy: 90.17%
 
 The [second example](./instruction-follow.ipynb) expands on the introduction to instruction finetuning in the book [chapter 7](https://github.com/rasbt/LLMs-from-scratch/blob/main/ch07/01_main-chapter-code/ch07.ipynb) and provides the implementation of a chat interface application with the finetuned model.
 
+![](./images/chat.png)
