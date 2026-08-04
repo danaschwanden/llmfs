@@ -7,10 +7,7 @@ sms_spam_collection/**
 __MACOSX/**
 
 accuracy-plot.pdf
-gpt2-small-124M.pth
-gpt2-small124M-sft.pth
-gpt2-medium-355M-sft.pth
-gpt2-medium-355M-sft-it.pth
+*.pth
 instruction-data.json
 instruction-data-with-response.json
 loss-plot.pdf
