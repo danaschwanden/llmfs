@@ -18,18 +18,30 @@ This section documents two finetuned implementations of the [GPT-2](https://open
 
 This [first example](./sentiment.ipynb) builds on the books' the Text Classifcation for SPAM detection from [chapter 6](https://github.com/rasbt/LLMs-from-scratch/blob/main/ch06/01_main-chapter-code/ch06.ipynb) and applies the concepts to finetune a model for [Sentiment Classification](./sentiment.ipynb).
 
-Model: gpt2-small-124M  
-Training accuracy: 91.27%  
-Validation accuracy: 90.00%  
-Test accuracy: 90.17%  
 
-|![loss](./images/loss.png)|![accuracy](./images/accuracy.png)|
-|:-:|:-:|
+
+
+
+|gpt2-small-124M|gpt2-medium-355M|gpt2-large-774M|
+|:-----------------|:----------------|:-----------------|
+|Training accuracy: 91.27%|Training accuracy: 94.66%|Training accuracy: 99.28%|
+|Validation accuracy: 90.00%|Validation accuracy: 92.00%|Validation accuracy: 96.00%|
+Test accuracy: 90.17%|Test accuracy: 92.50%|Test accuracy: 94.67%|
+|![loss](./images/loss-124M.png)|![loss](./images/loss-355M.png)|![loss](./images/loss-774M.png)|
+|![loss](./images/accuracy-124M.png)|![loss](./images/accuracy-355M.png)|![loss](./images/accuracy-774M.png)|
+
+
 
 
 
 ### 2.2. Finetuning To Follow Instructions
 
 The [second example](./instruction-follow.ipynb) expands on the introduction to instruction finetuning in the book [chapter 7](https://github.com/rasbt/LLMs-from-scratch/blob/main/ch07/01_main-chapter-code/ch07.ipynb) and provides the implementation of a chat interface application with the finetuned model.
+
+|gpt2-medium-355M (Ep 2 : Step 000230)|
+|:-----------------:|
+|Train loss 0.294|
+Validation loss 0.655|
+|![instructions](./images/instructions-355M.png)|
 
 ![](./images/chat.png)
