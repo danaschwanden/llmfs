@@ -1,0 +1,1 @@
+docker run --rm --gpus 1 -p 8000:8000 chainlit-gpu-app:latest

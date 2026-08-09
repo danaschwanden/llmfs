@@ -1,5 +1,7 @@
-chainlit>=1.2.0
+accelerate
+chainlit
 matplotlib
 numpy
 tiktoken
 torch
+transformers

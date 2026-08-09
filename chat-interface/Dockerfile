@@ -1,5 +1,17 @@
-FROM python:3.14-slim
+FROM nvidia/cuda:12.1.0-runtime-ubuntu22.04
 
+# Set non-interactive mode for apt-get
+ENV DEBIAN_FRONTEND=non-interactive
+
+# Install Python, pip, and system dependencies
+RUN apt-get update && apt-get install -y \
+    python3-pip \
+    python3-dev \
+    git \
+    curl \
+    && rm -rf /var/lib/apt/lists/*
+
+# Set working directory
 WORKDIR /app
 
 # Copy requirements
@@ -25,4 +37,4 @@ ENV CHAINLIT_PORT=8000
 EXPOSE 8000
 
 # Default command
-CMD ["chainlit", "run", "app.py", "--host", "0.0.0.0", "--port", "8000", "--headless"]
+CMD ["chainlit", "run", "app.py", "--host", "0.0.0.0", "--port", "8000"]
